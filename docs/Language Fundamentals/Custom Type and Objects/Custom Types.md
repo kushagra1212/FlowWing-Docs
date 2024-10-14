@@ -1,8 +1,8 @@
 ---
-sidebar_position: 8
+sidebar_position: 1
 ---
 
-import CodeBlock from "../../src/components/common/CodeBlock";
+import CodeBlock from "../../../src/components/common/CodeBlock";
 
 # Custom Types
 
@@ -37,8 +37,7 @@ Here, the `Person` type is defined with two properties: `name` and `age`. The `P
 Flow-Wing supports arrays of custom types. The `Person` type is used in the `people` array.
 
 <CodeBlock code={
-`
-type Person = {
+`type Person = {
     name: str,
     age: int,
 }

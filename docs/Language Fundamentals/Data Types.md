@@ -2,6 +2,8 @@
 sidebar_position: 2
 ---
 
+import CodeBlock from "../../src/components/common/CodeBlock";
+
 # Data Types in Flow-Wing
 
 ## 1. Integer Data Type (`int`)
@@ -10,9 +12,9 @@ The `int` datatype represents a 32-bit signed integer. It is used to store numer
 
 ### Example Usage:
 
-```ts
-var x: int = 42
-```
+<CodeBlock code={
+`var x: int = 42
+`} language="fg"/>
 
 ### Properties:
 
@@ -28,9 +30,9 @@ The `deci` datatype is used to store floating-point numbers with decimal points.
 
 ### Example Usage:
 
-```ts
-var y: deci = 3.14
-```
+<CodeBlock code={
+`var y: deci = 3.14
+`} language="fg"/>
 
 ### Properties:
 
@@ -45,9 +47,9 @@ The `bool` datatype represents a boolean value, which can be either `true` or `f
 
 ### Example Usage:
 
-```ts
-var isActive: bool = true
-```
+<CodeBlock code={
+`var isActive: bool = true
+`} language="fg"/>
 
 ### Properties:
 
@@ -62,9 +64,9 @@ The `str` datatype is used to store sequences of characters.
 
 ### Example Usage:
 
-```ts
-var name: str = "flowwing"
-```
+<CodeBlock code={
+`var name: str = "flowwing"
+`} language="fg"/>
 
 ### Properties:
 
@@ -78,11 +80,11 @@ The `nthg` datatype represents the absence of a value, often used as a return ty
 
 ### Example Usage:
 
-```ts
-fun doNothing() -> nthg {
-  // This function does not return anything
+<CodeBlock code={
+`fun doNothing() -> nthg {
+    /; This function does not return anything
 }
-```
+`} language="fg"/>
 
 ### Properties:
 
@@ -96,9 +98,9 @@ The `deci32` datatype represents a 32-bit floating-point number, used for storin
 
 ### Example Usage:
 
-```ts
-var z: deci32 = 1.23
-```
+<CodeBlock code={
+`var z: deci32 = 1.23
+`} language="fg"/>
 
 ### Properties:
 
@@ -113,9 +115,9 @@ The `int8` datatype represents a 8-bit signed integer, used for storing small in
 
 ### Example Usage:
 
-```ts
-var x: int8 = Int8(42)
-```
+<CodeBlock code={
+`var x: int8 = Int8(42)
+`} language="fg"/>
 
 ### Properties:
 
@@ -130,13 +132,13 @@ The `Nir` datatype represents the null or Nirast value, often used as a return t
 
 ### Example Usage:
 
-```ts
-const val: Nir, err: Err::Result = File.read("file.txt","r")
+<CodeBlock code={
+`const val: Nir, err: Err::Result = File.read("file.txt","r")
 
 if err != Nir {
   print(err.getMessage())
 }
-```
+`} language="fg"/>
 
 ### Properties:
 

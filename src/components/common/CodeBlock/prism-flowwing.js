@@ -83,7 +83,7 @@ Prism.languages.flowwing = {
 Prism.languages.flowwing = {
   comment: [
     {
-      pattern: /(^|[^\\])\/\#[\s\S]*?(?:\#\/|$)/,
+      pattern: /(^|[^\\])\/#[\s\S]*?(?:#\/|$)/,
       lookbehind: true,
       greedy: true,
     },
@@ -105,7 +105,7 @@ Prism.languages.flowwing = {
     },
   },
   keyword:
-    /\b(?:break|continue|else|for|if|or if|return|switch|case|while|expose|default|var|const|type|fun|inout|as|decl|new|module|init|class|(?:int|deci32|str|bool|nthg|deci))\b/,
+    /\b(?:break|continue|else|for|if|or if|return|switch|case|while|expose|default|var|const|type|fun|inout|as|self|bring|from|extends|decl|fill|new|module|init|class|(?:int|deci32|str|bool|nthg|deci))\b/,
 
   boolean: /\b(?:false|true)\b/,
   function: /\b\w+(?=\()/,
@@ -113,11 +113,3 @@ Prism.languages.flowwing = {
   operator: /[<>]=?|[!=]=?=?|--?|\+\+?|&&?|\|\|?|[?*/~^%]/,
   punctuation: /[{}[\];(),.:]/,
 };
-
-// Add language to Prism
-Prism.languages.insertBefore("flowwing", "comment", {
-  "block-comment": {
-    pattern: /\/#[\s\S]*?#\//,
-    greedy: true,
-  },
-});

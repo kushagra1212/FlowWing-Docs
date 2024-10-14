@@ -2,6 +2,8 @@
 sidebar_position: 3
 ---
 
+import CodeBlock from "../../src/components/common/CodeBlock";
+
 # Variables and Constants Declaration
 
 This document provides examples of how to declare variables and constants in Flow-Wing.
@@ -11,13 +13,13 @@ This document provides examples of how to declare variables and constants in Flo
 Variables in Flow-Wing can be declared with a specific data type and assigned a value.
 
 ### Example:
-```ts
-var integer: int = 10
+<CodeBlock code={
+`var integer: int = 10
 var decimal: deci = 5.5
 var _string: str = "Hello, Flow-Wing!"
 var _boolean: bool = true
 var someThing = "Hello, Flow-Wing!"
-```
+`} language="fg"/>
 
 Here variable someThing is a `Dynamic Type Variable` that can be assigned any value. but its current value is `"Hello, Flow-Wing!"` which is a `string`.
 
@@ -27,15 +29,15 @@ Here variable someThing is a `Dynamic Type Variable` that can be assigned any va
 Variables in Flow-Wing can be `dynamically allocated`. This means that they can be assigned a value at runtime.
 
 ### Example:
-```ts
-var number: int  = new 2
+<CodeBlock code={
+`var number: int  = new 2
 var string: str = new "Hello, Flow-Wing!"
 var boolean: bool = new true
-```
+`} language="fg"/>
 
 ### Example with Complex Type:
-```ts
-type Person = {
+<CodeBlock code={
+`type Person = {
     name: str,
     age: int,
     height: deci
@@ -43,18 +45,18 @@ type Person = {
 
 var person: Person = { name: "Alice", age: 30, height: 5.5 }
 print(person)
-```
+`} language="fg"/>
 
 ### Example with Array Type:
-```ts
-var numbers: int[5] = [1, 2, 3, 4, 5]
-```
+<CodeBlock code={
+`var numbers: int[5] = [1, 2, 3, 4, 5]
+`} language="fg"/>
 
 ### Example with Default Value:
 
-```ts
-var numbers: int[5]
-```
+<CodeBlock code={
+`var numbers: int[5]
+`} language="fg"/>
 
 Here numbers is an `array` of `int` with a default value of `[0, 0, 0, 0, 0]`.
 
@@ -63,6 +65,6 @@ Here numbers is an `array` of `int` with a default value of `[0, 0, 0, 0, 0]`.
 Constants are immutable and cannot be changed after being assigned.
 
 ### Example:
-```ts
-const x: int = 2
-```
+<CodeBlock code={
+`const x: int = 2
+`} language="fg"/>
