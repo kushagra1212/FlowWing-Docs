@@ -66,6 +66,7 @@ The `str` datatype is used to store sequences of characters.
 
 <CodeBlock code={
 `var name: str = "flowwing"
+print(name, name[2])
 `} language="fg"/>
 
 ### Properties:

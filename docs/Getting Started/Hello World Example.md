@@ -11,7 +11,7 @@ In this section, you'll learn how to write and run a simple "Hello World" progra
 Create a file named `main.fg` with the following content:
 
 ```js
-print("Hello World");
+print("Hello World")
 ```
 
 Run the program in Flow-Wing:

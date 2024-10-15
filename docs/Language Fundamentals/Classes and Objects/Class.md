@@ -41,14 +41,12 @@ In Flow-Wing, classes are defined using the `class` keyword.
 const person: Person = Person("Alice", 30)
 
 person.print()
-print("\n"person.getAge())
+print("\\n"person.getAge())
 `} language="fg"/>
 
 
 **Output:**
-```bash
 
-```
 <CodeBlock code={
 `Alice is 30 years old.
 30`

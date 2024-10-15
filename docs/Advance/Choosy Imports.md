@@ -3,7 +3,7 @@ sidebar_position: 2
 ---
 import CodeBlock from "../../src/components/common/CodeBlock";
 
-# Choosy Imports in Flow-Wing
+# Choosy Imports
 
 
 In Flow-Wing, the `bring` statement can selectively import specific exposed items from a file or module. This mechanism is known as choosy imports, where only the necessary components are imported from an external file. This helps in avoiding namespace pollution and enhances code readability and maintainability by importing only what is required.
