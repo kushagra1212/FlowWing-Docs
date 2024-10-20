@@ -1,22 +1,21 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
-
+require("dotenv").config();
 const config: Config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
+  title: "Flow-Wing",
+  tagline: "Sculpting logic with the elegance of flow",
   favicon: "img/favicon.ico",
-
   // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
+  url: "https://github.com/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "kushagra1212", // Usually your GitHub org/user name.
+  projectName: "Flow-Wing", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -31,14 +30,12 @@ const config: Config = {
 
   presets: [
     [
-      "classic",
+      "@docusaurus/preset-classic",
       {
         docs: {
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          // Remove this to remove the "edit this page" links.x
         },
         blog: {
           showReadingTime: true,
@@ -48,8 +45,8 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          // editUrl:
+          //   "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -61,36 +58,47 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
-
+  plugins: [
+    // ... Your other plugins.
+    [
+      "docusaurus-plugin-search-local",
+      {
+        // ... Your options.
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+      },
+    ],
+  ],
   themeConfig: {
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
-
+    image: "img/flowwing-icon.png",
     navbar: {
-      title: "My Site",
+      title: "Flow-Wing",
       logo: {
-        alt: "My Site Logo",
-        src: "img/flowwing_logo.svg",
+        alt: "Flow-Wing Logo",
+        src: "img/flowwing-icon.svg",
       },
       items: [
         {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Read Docs",
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/kushagra1212/Flow-Wing",
           label: "GitHub",
+          position: "right",
+        },
+        {
+          type: "docsVersionDropdown",
           position: "right",
         },
       ],
     },
     colorMode: {
       defaultMode: "dark",
-      disableSwitch: true, // Optionally disable the theme switcher (if you want only black theme)
-      respectPrefersColorScheme: false, // Ignores system color scheme settings
     },
     footer: {
       style: "dark",
@@ -99,8 +107,8 @@ const config: Config = {
           title: "Docs",
           items: [
             {
-              label: "Tutorial",
-              to: "/docs/intro",
+              label: "Flow-Wing Docs",
+              to: "/docs/category/introduction",
             },
           ],
         },
@@ -109,15 +117,11 @@ const config: Config = {
           items: [
             {
               label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              href: "https://stackoverflow.com/questions/tagged/Flowwing",
             },
             {
               label: "Twitter",
-              href: "https://twitter.com/docusaurus",
+              href: "https://x.com/kushagrathore12",
             },
           ],
         },
@@ -130,13 +134,14 @@ const config: Config = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: "https://github.com/kushagra1212/Flow-Wing",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Flow-Wing.`,
     },
+
     prism: {
       theme: prismThemes.vsDark,
       darkTheme: prismThemes.nightOwl,

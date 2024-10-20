@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Prism from "prismjs";
 import "prismjs/themes/prism-tomorrow.css"; // You can choose your theme
-import "./prism-flowwing"; // Make sure to adjust the path
+import "../../../utils/prism-flowwing"; // Make sure to adjust the path
 import Styles from "./CodeBlock.module.css";
 
 const CodeBlock = ({ code, language }) => {

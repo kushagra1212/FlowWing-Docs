@@ -1,19 +1,9 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+FlowWing:
+  label: Flow-Wing
+  permalink: /flow-wing
+  description: Flow-Wing Programming Language
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
-
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
-
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+Server:
+  label: Server
+  permalink: /server
+  description: Flow-Wing Server
