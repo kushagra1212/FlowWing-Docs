@@ -9,11 +9,7 @@ export default function AboutSection() {
           About Flow-Wing
         </Heading>
         <p className={styles.sectionDescription}>
-          Flow-Wing is a programming language designed for seamless, intuitive
-          programming, where code flows like natural thought. With its unique
-          approach, Flow-Wing empowers developers to express their ideas clearly
-          and efficiently, facilitating creativity and productivity in software
-          development.
+          Flow-Wing is a Simple programming language 
         </p>
       </div>
     </section>
