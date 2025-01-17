@@ -4,7 +4,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 require("dotenv").config();
 const config: Config = {
   title: "Flow-Wing",
-  tagline: "Sculpting logic with the elegance of flow",
+  tagline: "A Programming Language",
   favicon: "img/favicon.ico",
   // Set the production url of your site here
   url: "https://github.com/",
